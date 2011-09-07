@@ -1,0 +1,9 @@
+//-----------------------------------------------
+// Synapse Gaming - SunBurn Lighting System
+// Exported from the SunBurn material editor
+//-----------------------------------------------
+
+Locale: en-US
+
+DiffuseMap: "cobblestone.png"
+NormalMap: "cobblestone_normal.png"

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Graphics="Microsoft.Xna.Framework.Graphics" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Models\wood_planks.mat</Source>
+      <Name>Models\wood_planks</Name>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor>LightingMaterialProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\Models\wood_planks.xnb</Output>
+      <Time>2011-09-07T12:14:07.4644662-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\wood_planks_0.xml</Key>
+        <Value>2011-09-07T12:14:07.7374818-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\Models\cobblestone_0.xnb</Request>
+      <Request>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\Models\cobblestone_normal_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\box.fbx</Source>
+      <Name>Models\box</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>LightingSystemModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\Models\box.xnb</Output>
+      <Time>2009-09-22T17:52:34-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\box_0.xml</Key>
+        <Value>2011-09-07T10:57:42.4212167-04:00</Value>
+      </Dependency>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\DiffuseTextureName_0.xml</Key>
+        <Value>2011-09-07T10:57:42.4732197-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\Models\DiffuseTextureName_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\wood_planks.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\wood_planks_0.xml</Output>
+      <Time>2011-09-07T12:14:07.4644662-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\box.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\box_0.xml</Output>
+      <Time>2009-09-22T17:52:34-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\DiffuseTextureName.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Processor></Processor>
+      <Options>IntermediateFile</Options>
+      <Output>obj\x86\Debug\Models\DiffuseTextureName_0.xml</Output>
+      <Time>2009-09-22T17:52:34-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\DiffuseTextureName_1.xml</Key>
+        <Value>2011-09-07T10:57:42.4722197-04:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\DiffuseTextureName.mat</Source>
+      <Importer>LightingMaterialImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\DiffuseTextureName_1.xml</Output>
+      <Time>2009-09-22T17:52:34-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\DiffuseTextureName.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\Models\DiffuseTextureName_0.xnb</Output>
+      <Time>2009-09-22T17:52:34-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\cobblestone.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\Models\cobblestone_0.xnb</Output>
+      <Time>2011-08-23T14:08:48.9478124-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\cobblestone_normal.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\Models\cobblestone_normal_0.xnb</Output>
+      <Time>2011-09-07T12:13:53.649676-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\bin\x86\Debug\Content-Framework\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Windows\assembly\GAC_32\SynapseGaming-SunBurn-Framework-Processors\1.3.2.8__b85ab09242b443ee\SynapseGaming-SunBurn-Framework-Processors.dll</Key>
+        <Value>2011-09-07T09:23:07.2386149-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2009-05-28T00:16:14-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2009-05-28T00:16:06-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2009-05-28T00:16:16-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2009-05-28T00:16:26-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2009-05-28T00:16:12-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2009-05-28T00:16:06-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-09-07T09:19:05.3597802-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

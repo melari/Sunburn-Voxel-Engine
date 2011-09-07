@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Processors="SynapseGaming.LightingSystem.Processors">
+  <Asset Type="Processors:LightingMaterialContent">
+    <Identity>
+      <SourceFilename>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\Models\wood_planks.mat</SourceFilename>
+    </Identity>
+    <MaterialName></MaterialName>
+    <MaterialFile></MaterialFile>
+    <ProjectFile></ProjectFile>
+    <Skinned>false</Skinned>
+    <DoubleSided>false</DoubleSided>
+    <TransparencyMode>None</TransparencyMode>
+    <Transparency>1</Transparency>
+    <DiffuseMapTexture Null="true" />
+    <NormalMapTexture Null="true" />
+    <DiffuseMapFileFound>true</DiffuseMapFileFound>
+    <DiffuseMapFile>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\Models\cobblestone.png</DiffuseMapFile>
+    <NormalMapFile>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\Models\cobblestone_normal.png</NormalMapFile>
+    <SpecularPowerFound>false</SpecularPowerFound>
+    <SpecularPower>0</SpecularPower>
+    <SpecularAmountFound>false</SpecularAmountFound>
+    <SpecularAmount>0</SpecularAmount>
+    <DiffuseColorFound>false</DiffuseColorFound>
+    <DiffuseColor>0 0 0 0</DiffuseColor>
+    <EmissiveColorFound>false</EmissiveColorFound>
+    <EmissiveColor>0 0 0 0</EmissiveColor>
+    <AddressU>Wrap</AddressU>
+    <AddressV>Wrap</AddressV>
+    <AddressW>Wrap</AddressW>
+  </Asset>
+</XnaContent>
