@@ -65,10 +65,11 @@ namespace VoxelEngine
     /// <summary>
     /// This is the main type for your game
     /// </summary>
-    public class VoxelEngine : Microsoft.Xna.Framework.Game
+    public class Engine : Microsoft.Xna.Framework.Game
     {
+        public static bool DEBUG = false;
 
-        ContainerManager containerManager = new ContainerManager();
+        VoxelManager voxelManager = new VoxelManager();
 
         // The SunBurn lighting system.
         LightingSystemManager lightingSystemManager;
@@ -93,7 +94,7 @@ namespace VoxelEngine
         const float moveScale = 20.0f;
         const string userPreferencesFile = "UserPreferences.xml";
 
-        public VoxelEngine()
+        public Engine()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content-" + LightingSystemManager.Edition;
@@ -203,8 +204,8 @@ namespace VoxelEngine
 
 
 
-            containerManager.AddVoxelType("Models/wood_planks", 6400);
-            containerManager.FinishInit(Content, GraphicsDevice, sceneInterface);
+            voxelManager.AddVoxelType("Models/cobblestone", 10000);
+            voxelManager.FinishInit(Content, GraphicsDevice, sceneInterface);
 
             
 
@@ -232,10 +233,21 @@ namespace VoxelEngine
             sunlight.ShadowPrimaryBias = 1.0f;
             sunlight.ShadowSecondaryBias = 0.04f;
 
+            DirectionalLight sunlightB = new DirectionalLight();
+            sunlightB.Enabled = true;
+            sunlightB.DiffuseColor = new Vector3(0.0f, 0.97f, 0.77f);
+            sunlightB.Intensity = 2.6f;
+            sunlightB.Direction = new Vector3(0.60f, -0.73f, -0.32f);
+            sunlightB.ShadowType = ShadowType.AllObjects;
+            sunlightB.ShadowQuality = 1.0f;
+            sunlightB.ShadowPrimaryBias = 1.0f;
+            sunlightB.ShadowSecondaryBias = 0.04f;
+
             // Add the lights to a group.
             LightGroup group = new LightGroup();
             group.Add(ambientlight);
             group.Add(sunlight);
+            group.Add(sunlightB);
 
             // Add the group to the light rig and commit the changes.
             rig.LightGroups.Add(group);
@@ -281,21 +293,26 @@ namespace VoxelEngine
         /// checking for collisions, gathering input, and playing audio.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
+        KeyboardState prev_ks = new KeyboardState();
         protected override void Update(GameTime gameTime)
         {
-            {
-                if (Keyboard.GetState().IsKeyDown(Keys.Escape))
-                    this.Exit();
+            KeyboardState ks = Keyboard.GetState();
+            if (ks.IsKeyDown(Keys.Escape))
+                this.Exit();
 
-                view = ProcessCameraInput(gameTime);
-            }
+            view = ProcessCameraInput(gameTime);
+        
 
             projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(70.0f),
                 graphics.GraphicsDevice.Viewport.AspectRatio, 0.1f, environment.VisibleDistance);
 
             sceneInterface.Update(gameTime);
 
-            containerManager.Update();
+            if (ks.IsKeyDown(Keys.OemTilde) && !prev_ks.IsKeyDown(Keys.OemTilde))
+                DEBUG = !DEBUG;
+            voxelManager.Update();
+
+            prev_ks = ks;
 
             base.Update(gameTime);
         }
@@ -331,7 +348,8 @@ namespace VoxelEngine
             // Get SunBurn's stats for the frame.
             //totalObjectCountStat.AccumulationValue = instancesPerContainerObject * containerObjectCount;
 
-            LightingSystemStatistics.Render(GraphicsDevice, LightingSystemStatisticCategory.Rendering, new Vector2(20.0f), Vector2.One, Color.White, gameTime);
+            if (DEBUG)
+                LightingSystemStatistics.Render(GraphicsDevice, LightingSystemStatisticCategory.Rendering, new Vector2(20.0f), Vector2.One, Color.White, gameTime);
 
             base.Draw(gameTime);
         }

@@ -17,7 +17,7 @@ namespace VoxelEngine
         [STAThread]
         static void Main(string[] args)
         {
-            using (VoxelEngine game = new VoxelEngine())
+            using (Engine game = new Engine())
             {
                 try
                 {

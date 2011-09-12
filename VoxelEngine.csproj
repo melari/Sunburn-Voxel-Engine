@@ -76,12 +76,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BoxInstanceSourceData.cs" />
-    <Compile Include="ContainerManager.cs" />
+    <Compile Include="VoxelManager.cs" />
     <Compile Include="InstanceContainer.cs" />
     <Compile Include="ModelInstanceSourceData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Game.cs" />
+    <Compile Include="Engine.cs" />
+    <Compile Include="Voxel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

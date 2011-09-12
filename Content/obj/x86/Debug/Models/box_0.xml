@@ -3,7 +3,7 @@
   <Asset Type="Graphics:MeshContent">
     <Name>Box01</Name>
     <Identity>
-      <SourceFilename>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\Models\box.fbx</SourceFilename>
+      <SourceFilename>C:\Users\Caleb\Workspace\c#\Sunburn_Voxel_Engine\Content\Models\box.fbx</SourceFilename>
       <SourceTool>FbxImporter</SourceTool>
     </Identity>
     <Transform>2.54 0 0 0 0 2.54 5.639933E-16 0 0 -5.639933E-16 2.54 0 0 2.01844355E-08 -1.27 1</Transform>
@@ -26,7 +26,7 @@
     <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
       <Name>01 - Default</Name>
       <Identity>
-        <SourceFilename>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\Models\box.fbx</SourceFilename>
+        <SourceFilename>C:\Users\Caleb\Workspace\c#\Sunburn_Voxel_Engine\Content\Models\box.fbx</SourceFilename>
         <SourceTool>FbxImporter</SourceTool>
       </Identity>
       <OpaqueData>

@@ -2,7 +2,7 @@
 <XnaContent xmlns:Processors="SynapseGaming.LightingSystem.Processors">
   <Asset Type="Processors:LightingMaterialContent">
     <Identity>
-      <SourceFilename>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\Models\wood_planks.mat</SourceFilename>
+      <SourceFilename>C:\Users\Caleb\Workspace\c#\Sunburn_Voxel_Engine\Content\Models\cobblestone.mat</SourceFilename>
     </Identity>
     <MaterialName></MaterialName>
     <MaterialFile></MaterialFile>
@@ -14,8 +14,8 @@
     <DiffuseMapTexture Null="true" />
     <NormalMapTexture Null="true" />
     <DiffuseMapFileFound>true</DiffuseMapFileFound>
-    <DiffuseMapFile>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\Models\cobblestone.png</DiffuseMapFile>
-    <NormalMapFile>C:\Users\Caleb\Desktop\SunBurn-Instancing-Example\Content\Models\cobblestone_normal.png</NormalMapFile>
+    <DiffuseMapFile>C:\Users\Caleb\Workspace\c#\Sunburn_Voxel_Engine\Content\Models\cobblestone.png</DiffuseMapFile>
+    <NormalMapFile>C:\Users\Caleb\Workspace\c#\Sunburn_Voxel_Engine\Content\Models\cobblestone_normal.png</NormalMapFile>
     <SpecularPowerFound>false</SpecularPowerFound>
     <SpecularPower>0</SpecularPower>
     <SpecularAmountFound>false</SpecularAmountFound>
